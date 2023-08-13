@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(159,236,254);
+    background: linear-gradient(90deg, rgba(159,236,254,1) 0%, rgba(195,148,254,1) 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.img img{
+    width: 60px;
+}
+.logo{
+    display: flex;
+    align-items: center ;
+    padding-top: 10px;
+}
+.text{
+    padding-left: 10px;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.result{
+    background-color: blueviolet;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    /* background-color: aquamarine; */
+    padding: 10px;
+    text-align: center;
+}
+.input #yourname{
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid #2E7998;
+    text-align: center;
+    border-radius:40px; ;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+.input #yourname:focus{
+    background-color: black;
+
+}
+.input button{
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    background-color: #2C7EFE;
+    color: white;
+    border: none;
+    border-radius: 40px;
+}
+.result{
+    background-image: url(img/bg.png);
+    background-size: contain;
+    color: white;
+}
+#none{
+    display: none;
+}
+footer{
+    text-align: center;
+    position: fixed;
+      left: 0;
+      bottom: 0;
+      padding: 10px;
+     width: 100%;
+    color: white;
+    }
+@media screen and (max-width:620px) {
+    .result{
+        width: 400px;
+        
+    }
+    .result h2{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:425px) {
+    .result{
+        width: 350px;
+        height: 300px;
+        background-image: url(img/bg2.png);
+    }
+    .result h2{
+        font-size: 10px;
+    }
+}
