@@ -77,8 +77,33 @@ footer{
       bottom: 0;
       padding: 10px;
      width: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .gender{
+        /* background-color: #2C7EFE; */
+        text-align: center;
+        padding: 10px;
+    }
+    .play button{
+        height: 30px;
+        width: 150px;
+        cursor: pointer;
+        background-color: #2C7EFE;
+        color: white;
+        border: none;
+        border-radius: 40px;
+        color: white;
+        }
+.gender ul li{
+display: inline-block;
+margin: 10px;
+}
+
 @media screen and (max-width:620px) {
     .result{
         width: 400px;
@@ -87,7 +112,11 @@ footer{
     .result h2{
         font-size: 15px;
     }
-}
+    .openining img{
+        width: 300px;
+       
+    }
+    }
 @media only screen and (max-width:425px) {
     .result{
         width: 350px;
